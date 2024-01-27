@@ -10,7 +10,7 @@
 
 </div>
 
-<div align="center">
+<div align="center" style="max-width: 900px; margin: 0 auto;">
 
 ![](/public/demo.webp)
 
