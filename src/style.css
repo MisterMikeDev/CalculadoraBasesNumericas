@@ -1,0 +1,29 @@
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100dvh;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    gap: 4rem;
+}
+
+.resultado {
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+#result {
+    text-wrap: balance;
+    max-width: 20rem;
+}

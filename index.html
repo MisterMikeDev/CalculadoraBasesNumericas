@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Calculadora de Bases Numericas</title>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+        />
+    </head>
+    <body>
+        <h1>Calculadora de Bases Numericas</h1>
+        <section class="container">
+            <form id="form-calc">
+                <label>
+                    <b>Numero:</b>
+                    <input
+                        type="text"
+                        placeholder="Numero principal"
+                        value="0"
+                        min="0"
+                        name="numeroInput"
+                    />
+                </label>
+                <label>
+                    <b>Base de entrada:</b>
+                    <select name="baseInput">
+                        <option value="binary">Binario</option>
+                        <option value="octal">Octal</option>
+                        <option value="decimal" selected>Decimal</option>
+                        <option value="hexadecimal">Hexadecimal</option>
+                    </select>
+                </label>
+                <label>
+                    <b>Base de salida:</b>
+                    <select name="baseOutput">
+                        <option value="binary" selected>Binario</option>
+                        <option value="octal">Octal</option>
+                        <option value="decimal">Decimal</option>
+                        <option value="hexadecimal">Hexadecimal</option>
+                    </select>
+                </label>
+                <button type="submit"><b>Submit</b></button>
+            </form>
+            <div class="resultado">
+                <h3>Resultado:</h3>
+                <span id="result"> 0 </span>
+            </div>
+        </section>
+        <script type="module" src="/src/main.ts"></script>
+    </body>
+</html>
